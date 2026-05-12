@@ -1,9 +1,10 @@
 # 📦 Automated Box Cartooning Machine
-### Embedded Mechatronics System — TM4C123 Microcontroller, Pneumatics & SolidWorks
+### Embedded Mechatronics System — Tiva C Microcontroller, Pneumatics, SolidWorks & AutoCAD
 
-![MCU](https://img.shields.io/badge/MCU-Tiva%20C%20TM4C123-E44C30?style=flat-square&logo=texas-instruments&logoColor=white)
+![MCU](https://img.shields.io/badge/MCU-Tiva%20C%20TM4C123-E44C30?style=flat-square)
 ![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 ![CAD](https://img.shields.io/badge/CAD-SolidWorks-FF0000?style=flat-square)
+![AutoCAD](https://img.shields.io/badge/AutoCAD-Manufacturing%20Drawings-0696D7?style=flat-square)
 ![Actuation](https://img.shields.io/badge/Actuation-Pneumatic%20%7C%20Servo%20%7C%20Stepper-76B900?style=flat-square)
 ![Budget](https://img.shields.io/badge/Budget-Under%20%24300-brightgreen?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square)
@@ -30,12 +31,12 @@ Built for *MENG-2500 Mechatronics Project* at Humber Polytechnic — Winter 2025
 
 ## ✨ Key Features
 
-- **4-phase automated operation** — pick, rotate, fold, lock
-- **Closed-loop control** via ultrasonic sensor feedback
-- **Operator interface** — 4×4 keypad + 16×2 I2C LCD display
-- **Pneumatic actuation** — double-acting cylinders + vacuum suction cup
-- **Custom SolidWorks design** — fully 3D printed and assembled
-- **Under $300 budget** — scalable for real manufacturing use
+- ✅ **4-phase automated operation** — pick, rotate, fold, lock
+- ✅ **Closed-loop control** via ultrasonic sensor feedback
+- ✅ **Operator interface** — 4×4 keypad + 16×2 I2C LCD display
+- ✅ **Pneumatic actuation** — double-acting cylinders + vacuum suction cup
+- ✅ **Custom SolidWorks design** — fully 3D printed and assembled
+- ✅ **Under $300 budget** — scalable for real manufacturing use
 
 ---
 
@@ -125,19 +126,42 @@ FINAL MAIN ASSEMB.SLDASM
 
 ---
 
+## 📐 AutoCAD Manufacturing Drawings
+
+All machine parts were drafted in **AutoCAD** for precise fabrication before being built. The `.DWG` files contain dimensioned 2D drawings used for laser cutting and CNC machining.
+
+| File | Part |
+|---|---|
+| `final_box_cut_out.DWG` | Box blank cutout template |
+| `MAIN_REVOLVING_DISC.DWG` | Central rotating disc |
+| `LOWER_BASE_HALF.DWG` | Base plate — lower half |
+| `LOWER_BASE_HALF_2.DWG` | Base plate — lower half variant |
+| `TOP_BASE_CI_SIDE.DWG` | Top base — cylinder interface side |
+| `TOP_BASE_MOTOR_SIDE.DWG` | Top base — motor mount side |
+| `MOTOR_PLATE.DWG` | Stepper motor mounting plate |
+
+---
+
 ## 📁 Repository Structure
 
 ```
 📦 automated-box-cartooning-machine/
 ├── 📁 firmware/
-│   └── main.c                       # TM4C123 embedded C firmware — full machine control
-├── 📁 solidworks/
-│   └── FINAL_MAIN_ASSEMB.zip        # Complete SolidWorks assembly + all part files
+│   └── main.c                       # Tiva C embedded C firmware
+├── 📁 autocad/
+│   ├── final_box_cut_out.DWG        # Box blank cutout template
+│   ├── MAIN_REVOLVING_DISC.DWG      # Revolving disc drawing
+│   ├── LOWER_BASE_HALF.DWG          # Base plate drawings
+│   ├── LOWER_BASE_HALF_2.DWG
+│   ├── TOP_BASE_CI_SIDE.DWG         # Top base drawings
+│   ├── TOP_BASE_MOTOR_SIDE.DWG
+│   └── MOTOR_PLATE.DWG              # Motor mount plate
 ├── 📁 assets/
 │   ├── machine_photo.jpg            # Physical build photo
 │   ├── solidworks_render.jpg        # SolidWorks assembly render
-│   └── circuit_schematic.jpg        # Full circuit wiring diagram
-├── 📄 Final_Project_Report.pdf      # Full project report
+│   └── circuit_schematic.jpg        # Circuit wiring diagram
+├── [SolidWorks .SLDPRT / .SLDASM files]
+├── 📄 Final_Project_Report.pdf
 └── 📄 README.md
 ```
 
@@ -173,6 +197,7 @@ FINAL MAIN ASSEMB.SLDASM
 - Programming **embedded C++** on a TM4C123 microcontroller — timers, GPIO, PWM, UART
 - Integrating **pneumatic systems** with electronic control — solenoid valves, cylinders, vacuum
 - Building a full **SolidWorks assembly** with 40+ custom parts, designed for 3D printing
+- Creating **AutoCAD manufacturing drawings** (`.DWG`) with dimensions for fabrication
 - Implementing **closed-loop feedback** using ultrasonic sensors for position detection
 - Working within a **$300 hardware budget** — component selection, sourcing, and tradeoffs
 
